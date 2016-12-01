@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Untitled Document</title>
+    <link type="text/css" rel="stylesheet" href:"estiloBases.css">
+    <style>
+        body{
+            background-color: #f4e3a9;
+        }
+    h1{
+        background-color: #570000;
+        color:#f4e3a9;
+    }
+        h2{
+            background-color: #C00201;
+            color: #f4e3a9;
+        }
+        
+    a:hover  {
+        font-size: 2em;
+        background-color: #C00201;
+    }
+        a:visited{
+            color: #570000;
+        }
+
+    
+    
+    </style>
+</head>
+    
+<body>
+<h1 id="inicio">Tutorial de MySQL</h1>
+    <a href="#introduccion">Introduccion</a><br/>
+    <a href="#data">show databases</a><br/>
+    <a href="#registros">Carga de registros a una tabla y su recuperación</a>
+    
+<h2 id="introduccion">Introducción</h2>
+
+<p>SQL, Structure Query Language (Lenguaje de Consulta Estructurado) es un lenguaje de programacion para trabajar con base de datos relacionales como MySQL, Oracle, etc. <br/>
+MySQL es un interpretador de SQL, es un servidor de base de datos. <br/>
+MySQL permite crear base de datos y tablas, insertar datos, modificarlos, eliminarlos, ordenarlos, hacer consultas y realizar muchas operaciones, etc., resumiendo: administrar bases de datos.</p>
+
+<p>Ingresando instrucciones en la linea de comandos o embebidas en un lenguaje como PHP nos comunicamos con el servidor. Cada sentencia debe acabar con punto y coma (;).</p>
+
+<p>La sensibilidad a mayúsculas y minúsculas, es decir, si hace diferencia entre ellas, depende del sistema operativo, Windows no es sensible, pero Linux sí.<br/>
+Por ejemplo Windows interpreta igualmente las siguientes sentencias: create database administracion; Create DataBase administracion; <br/>
+Pero Linux interpretará como un error la segunda.
+Se recomienda usar siempre minúsculas.<br/>
+Es más el sitio mysqlya.com.ar está instalado sobre un servidor Linux por lo que todos los ejercicios deberán respetarse mayúsculas y minúsculas.</p><br/>
+
+<a href="#inicio">Volver al inicio</a>
+    
+    
+<h2 id="data">show databases</h2>
+
+
+<p>Una base de datos es un conjunto de tablas. <br/>
+Una base de datos tiene un nombre con el cual accederemos a ella.<br/>
+Vamos a trabajar en una base de datos ya creada en el sitio, llamada "administracion". <br/>
+Para que el servidor nos muestre las bases de datos existentes, se lo solicitamos enviando la instrucción: show databases; <br/>
+Nos mostrará los nombres de las bases de datos.</p><br/>
+
+<a href="#inicio">Volver al inicio</a>
+
+    
+<h2 id="creacion">Creación de una tabla y mostrar sus campos</h2>
+
+<p>Una base de datos almacena sus datos en tablas.<br/>
+Una tabla es una estructura de datos que organiza los datos en columnas y filas; <br/>
+cada columna es un campo (o atributo) y cada fila, un registro. <br/>
+La intersección de una columna con una fila, contiene un dato específico, un solo valor. <br/>
+Cada registro contiene un dato por cada columna de la  tabla.<br/>
+Cada campo (columna) debe tener un nombre. <br/>
+El nombre del campo hace referencia a la información que almacenará. <br/>
+Cada campo (columna) también debe definir el tipo de dato que almacenará.</p><br/> 
+
+    <a href="#inicio">Volver al inicio</a>
+
+<h2 id="registros">Carga de registros a una tabla y su recuperación</h2>
+
+
+<p>Usamos "insert into".<br/>
+Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los valores para cada campo, también entre paréntesis y separados por comas. <br/>
+Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en otro orden, no aparece un mensaje de error y los datos se guardan de modo incorrecto.<br/>
+Note que los datos ingresados, como corresponden a campos de cadenas de caracteres se colocan entre comillas simples. 
+Las comillas simples son OBLIGATORIAS.</p><br/>
+
+    <a href="#inicio">Volver al inicio</a>
+
+</body>
+</html>
